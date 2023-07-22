@@ -12,5 +12,6 @@ RUN pip install pymssql
 RUN pip install trino
 RUN pip install elasticsearch-dbapi
 
+
 # Switching back to using the `superset` user
 USER superset
