@@ -41,9 +41,9 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build & push image to ghcr
-      uses: docker/build-push-action@v3
+      uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
       with:
-        context: "./"
+        context: .
         push: true
         tags: "${{ steps.image.outputs.NAME }}"
         platforms: linux/amd64
